@@ -209,7 +209,7 @@ namespace DifferentialEq
 
         private void BStartSweep_Click(object sender, RoutedEventArgs e)
         {
-            int n = 120;
+            int n = 128;
             double x0 = 0.5, x1 = 1, eps = 0.00001, error = -100;
             double[] x = new double[n + 1];
             double[] y = new double[n + 1];
@@ -414,7 +414,12 @@ namespace DifferentialEq
                 new LineSeries
                 {
                     Title = "Прогонки",
-                    Values = new ChartValues<double>(valuesY3.AsEnumerable())
+                    Values = new ChartValues<double>(valuesY3.AsEnumerable()),
+                    Fill = new SolidColorBrush
+                    {
+                        Color = Colors.Green,
+                        Opacity = .4
+                    }
                 }
             };
             DataContext = this;
