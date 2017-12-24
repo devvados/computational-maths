@@ -141,7 +141,18 @@ namespace DifferentialEq
         private void BAddamsStart_Click(object sender, RoutedEventArgs e)
         {
             int n = 30;
-            double eps = 0.00001, yt, error = -100.00, x0 = 0.5, x1 = 1.0, y0 = -4.0, z0 = 1.5, yk = y0, yl = y0, yr = 5.0, y1, y2; // y(0.5)=p
+            double 
+                eps = 0.00001, 
+                yt, 
+                error = -100.00, 
+                x0 = 0.5, 
+                x1 = 1.0, 
+                y0 = -4.0, 
+                z0 = 1.5, 
+                yk = y0, 
+                yl = y0, 
+                yr = 5.0, 
+                y1, y2; // y(0.5)=p
             double[] w1l, w1k, y = new double[2];
             double[] yh = new double[n + 1];
             double[] yh2 = new double[2 * n + 1];
